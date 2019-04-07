@@ -181,7 +181,6 @@ function marksolves(cb) {
             var id = solves[i].challenge_id;
             var btn = $('button[value="' + id + '"]');
             btn.addClass('solved-challenge');
-            btn.prepend("<i class='fas fa-check corner-button-check'></i>")
         }
         if (cb) {
             cb();
@@ -259,12 +258,12 @@ function loadchals(cb) {
             var challenge = chalinfo.category.replace(/ /g, "-").hashCode();
             var chalid = chalinfo.name.replace(/ /g, "-").hashCode();
             var catid = chalinfo.category.replace(/ /g, "-").hashCode();
-            var chalwrap = $("<div id='{0}' class='col-md-3 d-inline-block'></div>".format(chalid));
+            var chalwrap = $("<div id='{0}' class='col-md-3 challenge-wrap'></div>".format(chalid));
 
             if (user_solves.indexOf(chalinfo.id) == -1) {
-                var chalbutton = $("<button class='btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2' value='{0}'></button>".format(chalinfo.id));
+                var chalbutton = $("<button class='btn btn-dark challenge-button pt-3 pb-3 mb-2' value='{0}'></button>".format(chalinfo.id));
             } else {
-                var chalbutton = $("<button class='btn btn-dark challenge-button solved-challenge w-100 text-truncate pt-3 pb-3 mb-2' value='{0}'><i class='fas fa-check corner-button-check'></i></button>".format(chalinfo.id));
+                var chalbutton = $("<button class='btn btn-dark challenge-button solved-challenge pt-3 pb-3 mb-2' value='{0}'></button>".format(chalinfo.id));
             }
 
             var chalheader = $("<p>{0}</p>".format(chalinfo.name));

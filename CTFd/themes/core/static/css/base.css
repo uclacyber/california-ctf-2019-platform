@@ -1,15 +1,22 @@
 html, body, .container {
     font-family: Input, monospace;
+    background-color: #1a1a1a;
+    color: #ccc;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: Input, monospace;
     font-weight: 500;
-    letter-spacing: 2px;
+    color: #b1d83d;
 }
 
 a {
-    color: #337ab7;
+    color: #b1d83d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d1ff48;
     text-decoration: none;
 }
 
@@ -38,8 +45,8 @@ table > thead > tr > td {
 }
 
 .jumbotron {
-    background-color: #343a40;
-    color: #FFF;
+    background-color: transparent;
+    color: inherit;
     border-radius: 0;
     text-align: center;
 }
@@ -49,14 +56,15 @@ table > thead > tr > td {
     display: block;
     padding: 0.8em;
     border-radius: 0;
-    background: #f0f0f0;
-    color: #aaa;
+    background-color: #333;
+    color: #ccc;
     font-weight: 400;
     font-family: Input, monospace;
     -webkit-appearance: none;
 }
 
 .form-control:focus {
+    color: #ccc;
     background-color: transparent;
     border-color: #a3d39c;
     box-shadow: 0 0 0 0.2rem #a3d39c;
@@ -149,4 +157,17 @@ select.form-control {
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
+}
+
+.card-body {
+    background-color: #393939;
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    color: #ccc;
+}
+
+.modal-content button.close {
+    color: #fff;
 }
