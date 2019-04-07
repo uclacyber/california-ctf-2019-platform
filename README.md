@@ -2,4 +2,7 @@
 
 Slightly customized CTFd platform for California CTF 2019.
 
-Use `docker-compose` to build and run.
+## Deployment
+
+    dd if=/dev/urandom of=./.ctfd_secret_key bs=64 count=1
+    docker-compose up
