@@ -171,3 +171,7 @@ select.form-control {
 .modal-content button.close {
     color: #fff;
 }
+
+a.nav-link[href="/users"], a.nav-link[href="/teams"] {
+    display: none;
+}
