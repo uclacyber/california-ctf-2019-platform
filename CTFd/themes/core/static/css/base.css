@@ -4,6 +4,10 @@ html, body, .container {
     color: #ccc;
 }
 
+.navbar {
+    background-color: #1a1a1a;
+}
+
 code, kbd, pre, samp {
     font-family: Input, monospace;
 }
@@ -177,5 +181,9 @@ select.form-control {
 }
 
 a.nav-link[href="/users"], a.nav-link[href="/teams"] {
+    display: none;
+}
+
+a[href="/oauth"], a[href="/reset_password"] {
     display: none;
 }

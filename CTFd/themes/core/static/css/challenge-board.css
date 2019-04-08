@@ -36,6 +36,7 @@
     margin-bottom: 0 !important;
     font-size: 18px;
     line-height: 1;
+    color: #ccc;
 }
 
 .challenge-button > p {
@@ -112,4 +113,10 @@
 #challenge-window pre {
     color: #ccc;
     padding-left: 4ex;          /* like markdown */
+}
+
+.explanation {
+    max-width: 70ex;
+    margin: 0 auto;
+    color: #ccc;
 }
