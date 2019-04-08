@@ -104,3 +104,12 @@
     border: none;
     font-weight: 700;
 }
+
+.challenges-row {
+    padding-bottom: 10px;
+}
+
+#challenge-window pre {
+    color: #ccc;
+    padding-left: 4ex;          /* like markdown */
+}

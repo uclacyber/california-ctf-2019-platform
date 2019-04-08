@@ -4,6 +4,10 @@ html, body, .container {
     color: #ccc;
 }
 
+code, kbd, pre, samp {
+    font-family: Input, monospace;
+}
+
 h1, h2, h3 {
     font-family: Input, monospace;
     font-weight: 500;
